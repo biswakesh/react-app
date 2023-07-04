@@ -1,0 +1,22 @@
+.Header
+{
+    width: 620px;
+    display: flex;
+    border: 1px solid grey;
+    background-color: rgb(79, 119, 112);
+
+    }
+.Header>img{
+    height: 50px;
+    width: 80px;
+    border-radius:30px;
+}
+.chatArea{
+    height: 400px;
+    background-image:url("background.jpg");
+}
+.footer{
+    display: flex;
+    height: 46px;
+    background-color: rgb(57, 72, 69);
+}

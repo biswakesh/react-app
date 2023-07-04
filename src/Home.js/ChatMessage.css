@@ -1,0 +1,29 @@
+.chatbody{
+    flex: 1;
+    background-repeat: repeat;
+    padding: 30px;
+    background-position: center;
+    /* overflow: scroll; */
+}
+
+.chatmessage{
+    position: relative;
+    padding: 10Px;
+    width:fit-content;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+}
+.chatname{
+    position: absolute;
+    top: -15px;
+font-weight: 800;
+
+}
+.chattimestamp{
+    margin-left: 10px;
+    
+}
+.chatreceiver{
+    margin-left: auto;
+}
