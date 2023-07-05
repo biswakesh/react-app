@@ -13,7 +13,7 @@
 }
 .chatArea{
     height: 400px;
-    background-image:url("background.jpg");
+    background-image:url("../assets/background.jpg");
 }
 .footer{
     display: flex;

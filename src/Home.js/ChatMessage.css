@@ -17,7 +17,7 @@
 .chatname{
     position: absolute;
     top: -15px;
-font-weight: 800;
+    font-weight: 800;
 
 }
 .chattimestamp{
@@ -25,5 +25,9 @@ font-weight: 800;
     
 }
 .chatreceiver{
-    margin-left: auto;
+    right: 0px;
+}
+
+.chatsender{
+    left: 300px;
 }
