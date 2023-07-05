@@ -4,14 +4,15 @@ import{getAuth,GoogleAuthProvider} from "firebase/auth"
 // import { getDatabase } from "firebase/database"
 import{getFirestore,addDoc,collection}from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyChzpHBnmhZNWMESwSGO1gmLarSEF3HP7E",
-  authDomain: "webchat-5ff81.firebaseapp.com",
-  projectId: "webchat-5ff81",
-  storageBucket: "webchat-5ff81.appspot.com",
-  messagingSenderId: "1020014083683",
-  appId: "1:1020014083683:web:39281ebc81432a4c7f0256",
-  measurementId: "G-BK58EQ6J8T"
+  apiKey: "AIzaSyCJgkioYRB68fopHSQKAvdGLn381VSLHYM",
+  authDomain: "angularcrud-6be69.firebaseapp.com",
+  databaseURL: "https://angularcrud-6be69-default-rtdb.firebaseio.com",
+  projectId: "angularcrud-6be69",
+  storageBucket: "angularcrud-6be69.appspot.com",
+  messagingSenderId: "535243672600",
+  appId: "1:535243672600:web:c40188e462143f6225076d"
 };
+
 const app = initializeApp(firebaseConfig);
 const auth=getAuth()
 const provider=new GoogleAuthProvider();
