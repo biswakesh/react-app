@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes, BrowserRouter, useNavigate, Navigate } from 'react-router-dom';
-import Homepage from './Home.js/Homepage';
 import SigninWithGoogle from './Authentication/SigninWithGoogle';
 import ChatSection from "./Home.js/ChatSection"
 import { useState } from 'react';
@@ -9,10 +8,6 @@ import LeftPanel from './Home.js/Leftpanel';
 const App = () => {
   const [user, setuser] = useState(JSON.parse(localStorage.getItem("webchat")));
   console.log(user);
-
-  // useEffect(() => {
-  //   let user = JSON.parse(localStorage.getItem("webchat"))
-  // })
 
   const WelcomPage = () => (<>
     <h1 style={{textAlign:'center',paddingLeft:"300px"}}>Hello welcome to webchat</h1>

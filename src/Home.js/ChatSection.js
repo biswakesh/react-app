@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import "./ChatArea.css";
-import "./ChatMessage.css";
+import "./ChatSection.css";
 import { BsSearch } from 'react-icons/bs';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 import logo from "../assets/user.png"
 import { BsFillEmojiSmileFill } from "react-icons/bs";
 import { BiSend } from "react-icons/bi";
 import { AiFillCamera } from "react-icons/ai";
-import ChatMessage from './ChatMessage';
 import { useParams } from 'react-router-dom';
 import { addDoc, collection, doc, onSnapshot, orderBy, query, serverTimestamp, } from 'firebase/firestore';
 import { auth, db } from '../Authentication/Firebase_config';
@@ -79,10 +78,6 @@ const ChatSection = () => {
               <span className='chatname'> </span>{msg.message}
               <p style={{ fontSize: 10, marginLeft: 30 }} className='chattimestamp'>{new Date(msg.timestamp?.toDate()).toUTCString()} by {msg.name} </p>
             </p>
-            //  <p className='chatmessage'> 
-            //  <span className='chatname'>hy </span>ur hello
-            //  <span className='chattimestamp'>{new Date().toLocaleTimeString()}</span>
-            //  </p>
           ))}
         </div>
       </div>
@@ -101,6 +96,4 @@ const ChatSection = () => {
     </div>
   )
 }
-
-
 export default ChatSection
